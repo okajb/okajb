@@ -64,3 +64,11 @@ body{background:
 
 .picasso-poster{border:1px solid var(--line);padding:10px;background:#020503;overflow:hidden}
 .picasso-poster img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;background:#020503}
+
+
+/* ===== Espace commentaires ===== */
+.comments-section{max-width:none;padding-left:max(24px,calc((100vw - var(--max))/2));padding-right:max(24px,calc((100vw - var(--max))/2));background:linear-gradient(180deg,#06120e 0%,#091812 52%,#050d09 100%)}
+.comments-intro{max-width:820px;margin:-12px 0 34px}.comments-intro p{font-size:17px;line-height:1.75;color:#d1d8d3;margin:0 0 10px}.comments-note{font-size:12px!important;color:#8f9d94!important;letter-spacing:.03em}
+.comments-shell{max-width:980px;padding:24px;border:1px solid rgba(242,230,201,.14);border-radius:12px;background:linear-gradient(145deg,rgba(13,34,25,.94),rgba(4,14,10,.94));box-shadow:0 28px 75px rgba(0,0,0,.28)}
+.comments-shell .utterances{max-width:100%!important;margin:0!important}
+@media(max-width:600px){.comments-shell{padding:14px}.comments-intro p{font-size:15px}}
