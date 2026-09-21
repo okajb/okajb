@@ -107,3 +107,15 @@ body{background:
 .funding-mark small{margin-top:24px;color:var(--green2);font-size:11px;font-weight:900;letter-spacing:.3em}
 @media(max-width:960px){.funding-card{grid-template-columns:1fr;padding:36px}.funding-mark{min-height:190px}.funding-card:before{font-size:100px}}
 @media(max-width:600px){.funding-card{padding:26px 20px}.funding-copy>p:not(.eyebrow){font-size:16px}.funding-copy .funding-strong{font-size:18px}.funding-btn{width:100%}.funding-mark{min-height:150px}}
+
+
+/* ===== Prochain titre : VIVANT ===== */
+.vivant-preview{margin-top:28px;padding:22px 24px;border-left:3px solid var(--green2);background:rgba(255,255,255,.025);max-width:720px}
+.vivant-label{display:block;margin-bottom:5px;color:var(--green2);font-size:10px;font-weight:900;letter-spacing:.2em}
+.vivant-preview h3{margin:0 0 12px;font-family:Impact,'Arial Narrow Bold',sans-serif;font-size:clamp(44px,5vw,72px);line-height:.9;color:var(--cream);letter-spacing:.02em}
+.vivant-preview p{margin:0 0 15px;color:#cbd5ce;font-size:15px;line-height:1.65}
+.vivant-preview blockquote{margin:0;padding:0;color:#fff6df;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.55;font-style:italic}
+.funding-mark small{order:1;margin:0 0 18px}
+.funding-mark span{order:2}
+.funding-mark b{order:3;display:inline-block;margin-top:24px;padding:9px 13px;border:1px solid rgba(139,189,54,.38);border-radius:999px;color:var(--green2);font-size:10px;letter-spacing:.18em}
+@media(max-width:600px){.vivant-preview{padding:18px}.vivant-preview blockquote{font-size:15px}}
