@@ -129,3 +129,39 @@
   modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
 })();
+
+(() => {
+  const supportForm = document.getElementById('supportForm');
+  const status = document.getElementById('supportStatus');
+  if (!supportForm || !status) return;
+
+  supportForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    const button = supportForm.querySelector('.support-submit');
+    const original = button.textContent;
+    button.disabled = true;
+    button.textContent = 'ENVOI…';
+    status.className = 'support-status';
+    status.textContent = '';
+
+    try {
+      const response = await fetch(supportForm.action, {
+        method: 'POST',
+        body: new FormData(supportForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (!response.ok) throw new Error('send_failed');
+
+      supportForm.reset();
+      status.className = 'support-status success';
+      status.textContent = 'Merci 💚 Ton message a bien été envoyé à OKAJB.';
+    } catch (err) {
+      status.className = 'support-status error';
+      status.textContent = 'Le message n’a pas pu partir. Réessaie dans un instant.';
+    } finally {
+      button.disabled = false;
+      button.textContent = original;
+    }
+  });
+})();
