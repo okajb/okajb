@@ -20,6 +20,7 @@
       <a href="#bio">Bio</a>
       <a href="#picasso">Picasso</a>
       <a href="#merch">Merch</a>
+      <a href="#soutien">Vos mots</a>
       <a href="#liens">Liens</a>
     </nav>
     <a class="bandcamp-pill" href="https://okajb.bandcamp.com/" target="_blank" rel="noopener">BANDCAMP ↗</a>
@@ -136,6 +137,39 @@
       <div class="product-grid">
         <article class="product zoomable-product" role="button" tabindex="0" data-image="assets/images/tshirt-full.webp" data-title="T-SHIRT OKAJB — face & dos"><div class="product-visual"><img src="assets/images/tshirt-full.webp" alt="T-shirt OKAJB, face et dos"><span class="zoom-badge">ZOOM +</span></div><div class="product-copy"><span>01</span><h3>T-SHIRT</h3><p>OKAJB Custom Classic</p><b>BIENTÔT DISPONIBLE</b><small class="zoom-hint">Cliquer pour voir le détail face & dos</small></div></article>
         <article class="product zoomable-product" role="button" tabindex="0" data-image="assets/images/cap-full.webp" data-title="CASQUETTE OKAJB — détail"><div class="product-visual"><img src="assets/images/cap-full.webp" alt="Casquette OKAJB blanche et verte"><span class="zoom-badge">ZOOM +</span></div><div class="product-copy"><span>02</span><h3>CASQUETTE</h3><p>OKAJB Custom Classic</p><b>BIENTÔT DISPONIBLE</b><small class="zoom-hint">Cliquer pour voir la broderie en détail</small></div></article>
+      </div>
+    </section>
+
+
+    <section class="section support-section" id="soutien">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">VOS MOTS</p>
+          <h2>LAISSE UN MOT À OKAJB.</h2>
+        </div>
+        <span class="rule-label">SOUTIEN · RETOUR · MESSAGE</span>
+      </div>
+      <div class="support-grid">
+        <div class="support-copy">
+          <p>Un morceau t’a parlé ? Tu veux me dire ce que tu penses du projet ou simplement laisser un message de soutien ? Écris-moi ici.</p>
+          <p class="support-privacy">Ton adresse e-mail n’est pas affichée sur le site. Elle sert uniquement à recevoir ton message et à pouvoir te répondre si besoin.</p>
+        </div>
+        <form class="support-form" id="supportForm" action="https://formsubmit.co/ajax/jbcourtial@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message de soutien — Site OKAJB">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_captcha" value="false">
+          <label>
+            <span>TON E-MAIL</span>
+            <input type="email" name="email" autocomplete="email" placeholder="ton@email.com" required>
+          </label>
+          <label>
+            <span>TON MESSAGE</span>
+            <textarea name="message" rows="6" maxlength="1500" placeholder="Écris ton message ici…" required></textarea>
+          </label>
+          <input class="support-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+          <button class="btn btn-primary support-submit" type="submit">ENVOYER MON MESSAGE 💚</button>
+          <p class="support-status" id="supportStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
