@@ -72,3 +72,20 @@ body{background:
 .comments-shell{max-width:980px;padding:24px;border:1px solid rgba(242,230,201,.14);border-radius:12px;background:linear-gradient(145deg,rgba(13,34,25,.94),rgba(4,14,10,.94));box-shadow:0 28px 75px rgba(0,0,0,.28)}
 .comments-shell .utterances{max-width:100%!important;margin:0!important}
 @media(max-width:600px){.comments-shell{padding:14px}.comments-intro p{font-size:15px}}
+
+
+/* ===== Formulaire de soutien OKAJB ===== */
+.support-section{max-width:none;padding-left:max(24px,calc((100vw - var(--max))/2));padding-right:max(24px,calc((100vw - var(--max))/2));background:radial-gradient(circle at 82% 28%,rgba(25,167,101,.11),transparent 28%),linear-gradient(180deg,#06120e,#081711 55%,#050d09)}
+.support-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.support-copy{max-width:520px}.support-copy p{margin:0 0 18px;color:#d1d8d3;font-size:18px;line-height:1.75}.support-copy .support-privacy{font-size:12px;color:#8f9d94;line-height:1.65}
+.support-form{padding:30px;border:1px solid rgba(242,230,201,.14);border-radius:12px;background:linear-gradient(145deg,rgba(13,34,25,.96),rgba(4,14,10,.96));box-shadow:0 28px 75px rgba(0,0,0,.3)}
+.support-form label{display:block;margin-bottom:22px}.support-form label span{display:block;margin-bottom:9px;color:var(--green2);font-size:10px;font-weight:900;letter-spacing:.18em}
+.support-form input[type="email"],.support-form textarea{width:100%;border:1px solid rgba(242,230,201,.18);border-radius:7px;background:#06110d;color:var(--text);outline:0;padding:15px 16px;font:inherit;transition:border-color .18s ease,box-shadow .18s ease}
+.support-form textarea{min-height:150px;resize:vertical;line-height:1.55}
+.support-form input[type="email"]:focus,.support-form textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(25,167,101,.11)}
+.support-form ::placeholder{color:#6f7c74}
+.support-submit{width:100%;font-size:12px}
+.support-status{min-height:22px;margin:14px 0 0;font-size:13px;color:#b8c4bc}.support-status.success{color:#7ee6a8}.support-status.error{color:#ffb1a8}
+.support-honey{position:absolute!important;left:-9999px!important;opacity:0!important;pointer-events:none!important}
+@media(max-width:960px){.support-grid{grid-template-columns:1fr;gap:28px}.support-copy{max-width:760px}}
+@media(max-width:600px){.support-form{padding:20px}.support-copy p{font-size:16px}}
