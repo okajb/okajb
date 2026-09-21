@@ -89,3 +89,21 @@ body{background:
 .support-honey{position:absolute!important;left:-9999px!important;opacity:0!important;pointer-events:none!important}
 @media(max-width:960px){.support-grid{grid-template-columns:1fr;gap:28px}.support-copy{max-width:760px}}
 @media(max-width:600px){.support-form{padding:20px}.support-copy p{font-size:16px}}
+
+
+/* ===== Soutenir la suite ===== */
+.funding-section{max-width:none;padding-left:max(24px,calc((100vw - var(--max))/2));padding-right:max(24px,calc((100vw - var(--max))/2));background:linear-gradient(180deg,#040c08 0%,#07150f 100%)}
+.funding-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center;padding:54px;border:1px solid rgba(139,189,54,.28);border-radius:16px;background:radial-gradient(circle at 80% 50%,rgba(25,167,101,.20),transparent 33%),linear-gradient(135deg,#0a1a12,#07110c);box-shadow:0 35px 90px rgba(0,0,0,.35)}
+.funding-card:before{content:"BANDCAMP";position:absolute;right:-24px;bottom:-35px;font-family:Impact,'Arial Narrow Bold',sans-serif;font-size:150px;letter-spacing:.03em;color:rgba(242,230,201,.035);pointer-events:none}
+.funding-copy{position:relative;z-index:2;max-width:760px}
+.funding-copy h2{font-size:clamp(56px,7vw,96px);margin-bottom:24px}
+.funding-copy>p:not(.eyebrow){max-width:720px;font-size:18px;line-height:1.7;color:#d6ddd8}
+.funding-copy .funding-strong{color:var(--cream);font-weight:800;font-size:20px}
+.funding-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:28px}
+.funding-btn{min-height:56px;padding:0 24px;font-size:12px}
+.funding-next{font-size:10px;font-weight:900;letter-spacing:.16em;color:var(--green2);border:1px solid rgba(139,189,54,.25);padding:12px 14px;border-radius:999px;background:rgba(139,189,54,.05)}
+.funding-mark{position:relative;z-index:2;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(242,230,201,.12);border-radius:12px;background:radial-gradient(circle,rgba(139,189,54,.15),rgba(255,255,255,.015) 62%);text-align:center}
+.funding-mark span{font-family:Impact,'Arial Narrow Bold',sans-serif;font-size:clamp(70px,8vw,130px);line-height:.78;color:var(--cream);letter-spacing:.02em}
+.funding-mark small{margin-top:24px;color:var(--green2);font-size:11px;font-weight:900;letter-spacing:.3em}
+@media(max-width:960px){.funding-card{grid-template-columns:1fr;padding:36px}.funding-mark{min-height:190px}.funding-card:before{font-size:100px}}
+@media(max-width:600px){.funding-card{padding:26px 20px}.funding-copy>p:not(.eyebrow){font-size:16px}.funding-copy .funding-strong{font-size:18px}.funding-btn{width:100%}.funding-mark{min-height:150px}}
