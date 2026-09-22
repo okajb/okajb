@@ -131,3 +131,15 @@ body{background:
 .vivant-coming{font-size:12px!important;font-weight:900!important;letter-spacing:.2em!important;color:var(--green2)!important;margin:0 0 14px!important}
 @media(max-width:960px){.funding-card{grid-template-columns:1fr}.funding-cover{max-width:680px;width:100%;margin:0 auto}}
 @media(max-width:600px){.funding-cover-overlay{padding:36px 14px 14px;align-items:flex-start;flex-direction:column;gap:8px}.funding-cover-overlay strong{font-size:9px}}
+
+
+/* ===== GRAND DANS MA TÊTE · studio ===== */
+.upcoming-media{position:relative;z-index:2;display:grid;gap:14px;align-self:center}
+.studio-shot{position:relative;overflow:hidden;margin:0;border-radius:12px;border:1px solid rgba(242,230,201,.16);background:#020503;box-shadow:0 22px 55px rgba(0,0,0,.38)}
+.studio-shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center}
+.studio-shot figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:34px 18px 14px;background:linear-gradient(transparent,rgba(1,7,4,.96))}
+.studio-shot figcaption span{font-size:9px;font-weight:900;letter-spacing:.2em;color:#d8dfda}
+.studio-shot figcaption strong{font-size:10px;font-weight:900;letter-spacing:.14em;color:var(--green2)}
+.funding-copy h2{font-size:clamp(48px,6vw,82px);line-height:.88}
+@media(max-width:960px){.upcoming-media{max-width:680px;width:100%;margin:0 auto}}
+@media(max-width:600px){.studio-shot figcaption{padding:30px 13px 12px;align-items:flex-start;flex-direction:column;gap:5px}.funding-copy h2{font-size:clamp(46px,14vw,66px)}}
