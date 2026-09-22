@@ -119,3 +119,15 @@ body{background:
 .funding-mark span{order:2}
 .funding-mark b{order:3;display:inline-block;margin-top:24px;padding:9px 13px;border:1px solid rgba(139,189,54,.38);border-radius:999px;color:var(--green2);font-size:10px;letter-spacing:.18em}
 @media(max-width:600px){.vivant-preview{padding:18px}.vivant-preview blockquote{font-size:15px}}
+
+
+/* ===== Pochette / teaser VIVANT ===== */
+.funding-card{grid-template-columns:1.05fr .95fr}
+.funding-cover{position:relative;z-index:2;overflow:hidden;border-radius:14px;border:1px solid rgba(242,230,201,.16);box-shadow:0 28px 70px rgba(0,0,0,.48);background:#020503}
+.funding-cover img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+.funding-cover-overlay{position:absolute;left:0;right:0;bottom:0;padding:42px 24px 22px;background:linear-gradient(transparent,rgba(1,7,4,.96));display:flex;align-items:end;justify-content:space-between;gap:18px}
+.funding-cover-overlay span{font-size:9px;font-weight:900;letter-spacing:.2em;color:#d8dfda}
+.funding-cover-overlay strong{font-size:11px;font-weight:900;letter-spacing:.15em;color:var(--green2);border:1px solid rgba(139,189,54,.5);background:rgba(4,20,13,.84);padding:10px 12px;border-radius:999px}
+.vivant-coming{font-size:12px!important;font-weight:900!important;letter-spacing:.2em!important;color:var(--green2)!important;margin:0 0 14px!important}
+@media(max-width:960px){.funding-card{grid-template-columns:1fr}.funding-cover{max-width:680px;width:100%;margin:0 auto}}
+@media(max-width:600px){.funding-cover-overlay{padding:36px 14px 14px;align-items:flex-start;flex-direction:column;gap:8px}.funding-cover-overlay strong{font-size:9px}}
